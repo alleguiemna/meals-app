@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border:1px solid #FFF;
+  p {
+    font-size: 15px;
+    span {
+          color: #bd5631;
+        }
+  }
+ 
+}
