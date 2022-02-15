@@ -6,11 +6,10 @@ const Home = () => {
   const [searchMeal, setSearchMeal] = useState([])
   const [termSearch, setTermSearch] = useState("")
   const [error, setError] = useState("")
-  const [loading, setLoading] = useState(true)
 
   const fetchMealsByName= async () => {
    const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${termSearch}`)
-  .then(response => {setSearchMeal(response.data.meals);setLoading(true)})
+  .then(response => setSearchMeal(response.data.meals))
   .catch(error=>setError(error))
   }
   useEffect(() => {
