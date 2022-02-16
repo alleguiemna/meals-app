@@ -16,14 +16,10 @@ const Home = () => {
     fetchMealsByName()
    }, [termSearch]);
   
-  //  const handleClick = () =>
-  //  {
-  //   fetchMealsByName()
-  //  }
   return <div className="home">
             <div className="home-search">
               <input type="text" placeholder="Enter a meal name please ..." onChange={(e) => setTermSearch(e.target.value)} value={termSearch} />
-              <button onClick={fetchMealsByName}>Search Meal</button>
+              <button >Search Meal</button>
             </div>
             <div className="home-list">
               {searchMeal ? (searchMeal.map((search) => 
