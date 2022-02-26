@@ -27,14 +27,18 @@
     font-size: 15px;
   }
   button {
-   
     background-color: #bd5631;
     color: #fff;
     height: 35px;
-    margin-top: 25px;
+    margin: 20px 120px;
     border-radius: 8px;
     font-size: 15px;
     border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    text-decoration:none;
   }
   &-search{
     margin-bottom:10px;

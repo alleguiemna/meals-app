@@ -14,7 +14,7 @@ const RandomMeals = () => {
         setRandomMeal(response.data.meals);
         setLoading(false);
       })
-      .catch((error) => setError(error));
+      .catch((error) => setError(error.response.data));
   };
 
   useEffect(() => {
